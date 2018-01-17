@@ -11,7 +11,8 @@ module.exports = function(grunt) {
 			js: {
 				src: [
 					'src/start.js',
-					'src/end.js'
+					'src/end.js',
+					'src/chart/chart.js'
 				],
 				dest: 'nhlMap.js'
 			}
@@ -32,7 +33,8 @@ module.exports = function(grunt) {
 		// JSHint Task
 		jshint: {
 			all: [
-				'Gruntfile.js'
+				'Gruntfile.js',
+				'src/chart/chart.js'
 			]
 		}
 	});
